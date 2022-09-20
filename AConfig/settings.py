@@ -128,7 +128,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_ALLOWED_ORIGINS =[
     'http://localhost:3000/',
-    'https://samdevresources.netlify.app',
+    'https://samdevresources.netlify.app/',
 ]
 
 
