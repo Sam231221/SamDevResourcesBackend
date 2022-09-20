@@ -6,16 +6,12 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-rqt3pu7bfx%4m_4ew4k_c8)90)ss(u#2fhixk+2x4q23@&yzp-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['onlinewebresources.herokuapp.com', '127.0.0.1', '7cf2-2400-1a00-bde0-9b8-b491-1769-6650-fccc.in.ngrok.io',]
+ALLOWED_HOSTS = ['samdevresources.herokuapp.com', '127.0.0.1',]
 
 
 # Application definition
@@ -132,6 +128,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_ALLOWED_ORIGINS =[
     'http://localhost:3000/',
+    'https://samdevresources.netlify.app',
 ]
 
 
