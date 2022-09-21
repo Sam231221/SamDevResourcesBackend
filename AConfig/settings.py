@@ -129,10 +129,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CORS_ALLOWED_ORIGINS =[
-    'http://localhost:3000/',
-    'https://samdevresources.netlify.app/',
+    'http://localhost:3000',
+    'https://samdevresources.netlify.app',
 ]
 
+# CORS_ALLOW_ALL_ORIGINS = True
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES["default"].update(db_from_env)
